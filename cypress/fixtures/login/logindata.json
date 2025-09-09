@@ -1,0 +1,26 @@
+{ 
+    "validData" : {
+        "emailLog" : "123Kukuh@gmail.com",
+        "passwordLog" : "123456789"
+    },
+
+    "emptyEmail" : {
+        "emailLog" : "",
+        "passwordLog" : "123456789"
+    },
+        "emptyPassword" : {
+        "emailLog" : "123Kukuh@gmail.com",
+        "passwordLog" : ""
+    }, 
+    "invalidEmail" : {
+        "emailLog" : "123456789",
+        "passwordLog" : "123456789"
+    }, 
+    "wrongPassword" : {
+        "emailLog" : "123456789",
+        "passwordLog" : "123456789"
+    }
+
+}
+    
+    
