@@ -10,4 +10,4 @@ function generateRandomData() {
   }
 }
 
-module.exports = generateRandomData; // export function, bukan hasil
+module.exports = generateRandomData(); // export function, bukan hasil

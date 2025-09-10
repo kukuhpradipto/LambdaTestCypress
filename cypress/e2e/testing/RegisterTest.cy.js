@@ -1,10 +1,9 @@
 const HomePage = require("../pages/HomePage")
 const RegisterPage = require("../pages/RegisterPage")
-const generateRandomData = require("../../fixtures/autoGenerateRegisterData")
+const registerData = require("../../fixtures/autoGenerateRegisterData")
 
 
 describe("Test Scenario – Register Form", () => {
-    const registerData = generateRandomData();
 
     
     beforeEach(() => {
@@ -15,8 +14,6 @@ describe("Test Scenario – Register Form", () => {
     })
 
     it("✅ R-PC01 - Successful Registration with Valid Data with radio button YES", () => {
-
-        const registerData = generateRandomData();
 
         RegisterPage.verifyRegisterPage().should("be.visible")
         RegisterPage.firstNameField().type(registerData.FirstName).should("have.value",registerData.FirstName)
@@ -33,8 +30,7 @@ describe("Test Scenario – Register Form", () => {
         RegisterPage.verifyRegisterSuccess().should("be.visible").and("contain.text","Your Account Has Been Created!")
     })
 
-    it("✅ R-PC02 - Successful Registration with Valid Data with radio button NO", () => {
-         const registerData = generateRandomData();
+    it.only("✅ R-PC02 - Successful Registration with Valid Data with radio button NO", () => {
 
         RegisterPage.verifyRegisterPage().should("be.visible")
         RegisterPage.firstNameField().type(registerData.FirstName).should("have.value",registerData.FirstName)
